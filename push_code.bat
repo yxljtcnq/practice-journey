@@ -7,8 +7,10 @@ echo.
 
 echo [1/3] 正在添加源代码和脚本...
 git add push_code.bat
-git add run.bat
+git add .gitignore
 git add data-structure/*.c
+git add data-structure/*.java 2>nul
+git add daily/*.java 2>nul
 
 echo.
 echo [2/3] 正在提交代码...

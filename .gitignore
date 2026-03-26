@@ -44,3 +44,18 @@ Thumbs.db  # Windows 系统
 **/*.lastbuildstate
 **/*.idb
 **/*.pch
+
+# Visual Studio 缓存与项目文件
+.vs/
+data-structure/.vs/
+*.vcxproj.user
+*.suo
+x64/
+Debug/
+Release/
+
+# 可执行文件与临时文件
+*.exe
+nul
+Thumbs.db
+.DS_Store
