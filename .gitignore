@@ -21,28 +21,26 @@ Thumbs.db  # Windows 系统
 *.swp
 
 # ========== Visual Studio 2026 / C 语言项目 ==========
-# 解决方案与项目用户配置
-*.sln
-*.suo
-*.vcxproj.user
-*.vcxproj.filters
+# 解决方案与项目用户配置（递归所有子目录）
+**/*.sln
+**/*.suo
+**/*.vcxproj.user
+**/*.vcxproj.filters
 
-# 编译输出目录
-x64/
-x86/
-Debug/
-Release/
-ipch/
+# 编译输出目录（递归所有子目录）
+**/x64/
+**/x86/
+**/Debug/
+**/Release/
+**/ipch/
 
-# 编译中间文件与可执行文件
-*.obj
-*.exe
-*.pdb
-*.ilk
-*.log
-*.tlog
-*.lastbuildstate
-*.idb
-*.pch
-*.sbr
-*.bsc
+# 编译中间文件与可执行文件（递归所有子目录）
+**/*.obj
+**/*.exe
+**/*.pdb
+**/*.ilk
+**/*.log
+**/*.tlog
+**/*.lastbuildstate
+**/*.idb
+**/*.pch
