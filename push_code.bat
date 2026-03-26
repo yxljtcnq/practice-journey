@@ -5,8 +5,10 @@ echo          一键提交代码到Gitee
 echo ======================================
 echo.
 
-echo [1/3] 正在添加所有修改的文件...
-git add .
+echo [1/3] 正在添加源代码和脚本...
+git add push_code.bat
+git add run.bat
+git add data-structure/*.c
 
 echo.
 echo [2/3] 正在提交代码...
