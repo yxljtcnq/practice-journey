@@ -9,7 +9,6 @@ typedef struct StackNode
 	int data;
 	struct StackNode* next;
 }StackNode;
-
 //栈定义
 typedef struct LinkStack
 {

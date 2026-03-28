@@ -24,6 +24,7 @@
     <ProjectGuid>{40c6058f-f81e-47a0-a17b-e86218914c28}</ProjectGuid>
     <RootNamespace>P53stack</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>P53LinkStack</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
