@@ -1,4 +1,4 @@
-package test;
+package testInitial;
 
 public class forTest3 {
     static void main(String[] args) {

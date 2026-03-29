@@ -1,4 +1,4 @@
-package test;
+package testInitial;
 
 public class whileTest1 {
     static void main(String[] args) {

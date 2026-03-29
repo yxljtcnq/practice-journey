@@ -1,6 +1,5 @@
-package test;
+package testInitial;
 
-import javax.xml.transform.Source;
 import java.util.Scanner;
 public class Test1 {
     static void main(String[] args) {
