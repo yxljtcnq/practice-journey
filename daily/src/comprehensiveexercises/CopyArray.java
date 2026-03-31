@@ -2,7 +2,7 @@ package comprehensiveexercises;
 
 import java.util.Scanner;
 
-public class copyArray {
+public class CopyArray {
     static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

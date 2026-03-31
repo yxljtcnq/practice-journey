@@ -2,7 +2,7 @@ package comprehensiveexercises;
 
 import java.util.Scanner;
 
-public class seekprimenumber {
+public class Seekprimenumber {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入开始数据和结束数据");

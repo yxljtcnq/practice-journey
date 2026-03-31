@@ -2,7 +2,7 @@ package comprehensiveexercises;
 
 import java.util.Scanner;
 
-public class buyPlaneTicket {
+public class DuyPlaneTicket {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("输入要旅游的月份,机票原价");
