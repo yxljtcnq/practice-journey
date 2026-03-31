@@ -24,7 +24,7 @@ void initStack(LinkStack *s)
 //判断栈空
 int isempty(LinkStack *s )
 {
-	return s->top = NULL;
+	return s->top == NULL;
 }
 
 //入栈
@@ -39,6 +39,11 @@ void push (LinkStack *s , int data)
 //出栈
 void popStack(LinkStack* s)
 {
+	if (isempty(s))
+	{
+		printf("栈空,无法出栈");
+		return;
+	}
 	StackNode* p = s->top;
 	s->top = s->top->next;
 	free(p);
@@ -59,8 +64,27 @@ void printStack(LinkStack* s)
 //查看栈顶元素
 void findtopelem(LinkStack* s)
 {
+	if (isempty(s)) 
+	{
+		printf("栈空，无栈顶元素\n");
+		return;
+	}
 	printf("栈顶元素是%d", s->top->data);
 }
+
+
+//销毁链栈
+void destroyStack(LinkStack* s)
+{
+	StackNode* p = s->top;
+	while (p)
+	{
+		StackNode* temp = p;
+		p = p->next;
+		free(temp);
+	}
+}
+
 
 int main()
 {
@@ -77,4 +101,5 @@ int main()
 	popStack(&s);
 	printStack(&s);
 	findtopelem(&s);
+	destroyStack(&s);
 }
