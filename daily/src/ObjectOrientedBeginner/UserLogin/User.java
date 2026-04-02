@@ -1,4 +1,4 @@
-package UserLogin;
+package ObjectOrientedBeginner.UserLogin;
 
 public class User {
     private String username ;
