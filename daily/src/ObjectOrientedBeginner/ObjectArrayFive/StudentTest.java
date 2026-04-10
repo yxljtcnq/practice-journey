@@ -19,7 +19,6 @@ public class StudentTest {
         arr[1] = s2;
         arr[2] = s3;
         Student s4 = new Student(104,"歌姬",19);
-        String
     //  printStudentArr(arr);
     //  System.out.println("---------------------------------------");
         //要求一:唯一性判断
