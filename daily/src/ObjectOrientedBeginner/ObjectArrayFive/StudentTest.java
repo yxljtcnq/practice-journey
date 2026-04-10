@@ -1,4 +1,7 @@
 package ObjectOrientedBeginner.ObjectArrayFive;
+
+import java.util.Scanner;
+
 //定义数组存储3个学生对象。
 // 学生的属性：学号，姓名，年龄。
 // 要求1：添加的时候需要进行学号的唯一性判断。
@@ -16,6 +19,7 @@ public class StudentTest {
         arr[1] = s2;
         arr[2] = s3;
         Student s4 = new Student(104,"歌姬",19);
+        String
     //  printStudentArr(arr);
     //  System.out.println("---------------------------------------");
         //要求一:唯一性判断
