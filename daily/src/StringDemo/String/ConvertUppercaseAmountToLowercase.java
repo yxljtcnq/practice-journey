@@ -1,7 +1,7 @@
 
 //把2135变成：零佰零拾零万贰仟壹佰叁拾伍元
 //把789变成：零佰零拾零万零仟柒佰捌拾玖元
-package StringDemo;
+package StringDemo.String;
 
 import java.util.Scanner;
 
