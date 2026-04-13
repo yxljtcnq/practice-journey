@@ -21,5 +21,6 @@ public class DetermineSymmetry {
         boolean flag = s.equalsIgnoreCase(result);
         System.out.println(flag);
 
+
     }
 }
