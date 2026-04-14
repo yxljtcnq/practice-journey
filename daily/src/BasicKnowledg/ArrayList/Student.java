@@ -1,6 +1,8 @@
 package BasicKnowledg.ArrayList;
 
 public class Student {
+    public static Object theacher;
+    public static String theacherName;
     private String name;
     private int age;
     private int ID;
