@@ -26,6 +26,5 @@ public class MathAPI {
         System.out.println(Math.abs(88));
 
 
-
     }
 }
