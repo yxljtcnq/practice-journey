@@ -1,4 +1,4 @@
-package API.AppearanceTest;
+package api.AppearanceTest;
 
 import javax.swing.*;
 import java.awt.*;
