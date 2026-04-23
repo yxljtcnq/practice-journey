@@ -1,4 +1,4 @@
-package commonalgorithms;
+package commonalgorithms.searching;
 
 import java.util.ArrayList;
 import java.util.Arrays;
