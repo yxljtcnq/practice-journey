@@ -1,8 +1,10 @@
 package lowerpart.map;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Consumer;
 
 public class Map_Traversal_KeyValuePair {
     static void main(String[] args) {
@@ -38,6 +40,15 @@ public class Map_Traversal_KeyValuePair {
             System.out.println(key + "=" + value);
         }
 
+        //练习二,迭代器
+        Iterator it = entries.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+
+        //练习三,lamda表达式
+        entries.forEach(stringStringEntry->
+                System.out.println(stringStringEntry));
 
     }
 }
