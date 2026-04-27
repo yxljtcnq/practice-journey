@@ -1,10 +1,9 @@
-package lowerpart.map;
+package lowerpart.AdvancedSets.map;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-import java.util.function.Consumer;
 
 public class Map_Traversal_KeyValuePair {
     static void main(String[] args) {
