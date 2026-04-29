@@ -1,8 +1,7 @@
-package lowerpart.function.game;
+package lowerpart.function;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.function.Function;
 
 public class FunctionDemo5 {
     static void main(String[] args) {

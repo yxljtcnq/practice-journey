@@ -1,8 +1,9 @@
-package lowerpart.function;
+package lowerpart.exception;
 
 public class Student {
     private String name;
     private int age;
+
 
     public Student() {
     }
@@ -11,20 +12,6 @@ public class Student {
         this.name = name;
         this.age = age;
     }
-    public Student(String str) {
-        String[] arr = str.split(",");
-        this.name = arr[0];
-        this.age = Integer.parseInt(arr[1]);
-    }
-
-    // 新增：拼接姓名和年龄的方法（供方法引用使用）
-    public String getInfo() {
-        return this.name + "-" + this.age;
-    }
-
-    public Student(int i) {
-    }
-
 
     /**
      * 获取
@@ -55,7 +42,12 @@ public class Student {
      * @param age
      */
     public void setAge(int age) {
-        this.age = age;
+        if(age < 18 || age > 40){
+            //System.out.println("年龄超出范围");
+            throw new RuntimeException();
+        }else{
+            this.age = age;
+        }
     }
 
     public String toString() {

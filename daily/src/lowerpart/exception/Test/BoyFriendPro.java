@@ -1,30 +1,16 @@
-package lowerpart.function;
+package lowerpart.exception.Test;
 
-public class Student {
+public class BoyFriendPro {
     private String name;
     private int age;
 
-    public Student() {
+    public BoyFriendPro() {
     }
 
-    public Student(String name, int age) {
+    public BoyFriendPro(String name, int age) {
         this.name = name;
         this.age = age;
     }
-    public Student(String str) {
-        String[] arr = str.split(",");
-        this.name = arr[0];
-        this.age = Integer.parseInt(arr[1]);
-    }
-
-    // 新增：拼接姓名和年龄的方法（供方法引用使用）
-    public String getInfo() {
-        return this.name + "-" + this.age;
-    }
-
-    public Student(int i) {
-    }
-
 
     /**
      * 获取
@@ -39,6 +25,9 @@ public class Student {
      * @param name
      */
     public void setName(String name) {
+        if(name.length()<2 || name.length()>10){
+            throw new NameFormatException(name+"格式有误,长度应为2-10");
+        }
         this.name = name;
     }
 
@@ -55,10 +44,13 @@ public class Student {
      * @param age
      */
     public void setAge(int age) {
+        if(age<18 || age>25){
+            throw new AgeOutOfBoundsException(age+"年龄有误,应为18-25岁");
+        }
         this.age = age;
     }
 
     public String toString() {
-        return "Student{name = " + name + ", age = " + age + "}";
+        return "BoyFriend{name = " + name + ", age = " + age + "}";
     }
 }

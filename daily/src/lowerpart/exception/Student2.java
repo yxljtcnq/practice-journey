@@ -1,30 +1,24 @@
-package lowerpart.function;
+package lowerpart.exception;
 
-public class Student {
+public class Student2 {
     private String name;
     private int age;
 
-    public Student() {
+
+    public Student2() {
     }
 
-    public Student(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-    public Student(String str) {
+    public Student2(String str) {//"张三,23"
         String[] arr = str.split(",");
+        //arr 0: 张三,23
         this.name = arr[0];
         this.age = Integer.parseInt(arr[1]);
     }
 
-    // 新增：拼接姓名和年龄的方法（供方法引用使用）
-    public String getInfo() {
-        return this.name + "-" + this.age;
+    public Student2(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
-
-    public Student(int i) {
-    }
-
 
     /**
      * 获取
@@ -59,6 +53,6 @@ public class Student {
     }
 
     public String toString() {
-        return "Student{name = " + name + ", age = " + age + "}";
+        return "Student2{name = " + name + ", age = " + age + "}";
     }
 }
