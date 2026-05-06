@@ -12,9 +12,8 @@ public class Delete {
             如果删除的是有内容的文件夹，则删除失败
       */
 
-
         //1.创建File对象
-        File f1 = new File("D:\\aaa\\eee");
+        File f1 = new File("E:\\chenlinxin\\ggg");
         //2.删除
         boolean b = f1.delete();
         System.out.println(b);
